@@ -2,10 +2,14 @@ meteor-dev
 ==========
 
 A [Dockerfile](http://docs.docker.io/en/latest/reference/builder/) for building a [Meteor](http://www.meteor.com) development container.
+Based on Rick Golden's [Dockerfile](https://github.com/golden-garage/meteor-dev).
 
-
-Revisions 
+Revisions
 ---------
+
+### 2017-10-27 update Meteor version to meet specific requirements
+
+Updated to **Meteor version 1.2.1.**
 
 ### 2017-01-21 parameterize build
 
@@ -23,8 +27,6 @@ Added the following environment variables:
 Changed the default working directory to `/app`.
 
 ### 2016-11-15 add software packages so that `meteor npm install` can build npm modules
-
-Updated to **Meteor version 1.4.2.3.**
 
 Added `python` and `build-essential` packages, in case `npm` needs them to rebuild node modules.
 
